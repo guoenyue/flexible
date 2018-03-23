@@ -1,6 +1,6 @@
 const path=require("path");
 const config={
-	mode:"production",
+	mode:"development",
 	entry:{
 		index:"./js/index",
 		flexible:"./js/flex"
@@ -12,15 +12,18 @@ const config={
 	module:{
 		rules:[
 			{
-				test:/\.js$/i,
+				test:/\.jsx?$/i,
 				use:{
 					loader:"babel-loader",
 					options:{
-						presets:["es2015"]
+						presets:["es2015","react"]
 					}
 				}
 			}
 		]
+	},
+	resolve:{
+		extensions: [".js", ".json",".jsx",".css"]
 	}
 };
 
