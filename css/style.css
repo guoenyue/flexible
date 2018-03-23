@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size:1rem;
+}
+.box{
+	font-size:1rem;
+	width:5.6rem;
+	height:0.533333rem;
+	background-color: #639;
+}
+.px{
+	font-size:12px;
+}
+.rem{
+	font-size:0.16rem;
+}
